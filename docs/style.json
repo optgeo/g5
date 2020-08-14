@@ -106,12 +106,31 @@
                 "get",
                 "hh"
               ],
-              " houses\n",
+              [
+                "match",
+                [
+                  "get",
+                  "hh"
+                ],
+                1,
+                " house",
+                " houses"
+              ],
+              "\n",
               [
                 "get",
                 "pop"
               ],
-              " people"
+              [
+                "match",
+                [
+                  "get",
+                  "pop"
+                ],
+                1,
+                " person",
+                " persons"
+              ]
             ],
             ""
           ]
