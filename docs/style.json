@@ -1,0 +1,159 @@
+{
+  "center": [
+    135,
+    35
+  ],
+  "glyphs": "https://optgeo.github.io/manhattan/font/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "i",
+      "source": "i",
+      "type": "raster"
+    },
+    {
+      "id": "g5",
+      "paint": {
+        "fill-extrusion-color": [
+          "interpolate-hcl",
+          [
+            "linear"
+          ],
+          [
+            "get",
+            "pop"
+          ],
+          0,
+          [
+            "rgb",
+            33,
+            102,
+            172
+          ],
+          30,
+          [
+            "rgb",
+            103,
+            169,
+            207
+          ],
+          50,
+          [
+            "rgb",
+            209,
+            229,
+            240
+          ],
+          100,
+          [
+            "rgb",
+            253,
+            219,
+            199
+          ],
+          1000,
+          [
+            "rgb",
+            239,
+            138,
+            98
+          ],
+          5000,
+          [
+            "rgb",
+            178,
+            24,
+            43
+          ]
+        ],
+        "fill-extrusion-height": [
+          "*",
+          [
+            "get",
+            "pop"
+          ],
+          2
+        ],
+        "fill-extrusion-opacity": 0.5
+      },
+      "source": "v",
+      "source-layer": "g5",
+      "type": "fill-extrusion"
+    },
+    {
+      "id": "label",
+      "layout": {
+        "text-field": [
+          "step",
+          [
+            "zoom"
+          ],
+          "",
+          14,
+          [
+            "case",
+            [
+              "has",
+              "hh"
+            ],
+            [
+              "concat",
+              [
+                "get",
+                "hh"
+              ],
+              "世帯\n",
+              [
+                "get",
+                "pop"
+              ],
+              "人"
+            ],
+            ""
+          ]
+        ],
+        "text-font": [
+          "sans"
+        ]
+      },
+      "paint": {
+        "text-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "text-halo-color": [
+          "rgb",
+          238,
+          238,
+          238
+        ],
+        "text-halo-width": 1
+      },
+      "source": "v",
+      "source-layer": "g5",
+      "type": "symbol"
+    }
+  ],
+  "site_root": "https://optgeo.github.io/g5",
+  "sources": {
+    "i": {
+      "attribution": "国土地理院",
+      "maxzoom": 18,
+      "tiles": [
+        "https://maps.gsi.go.jp/xyz/std/{z}/{x}/{y}.png"
+      ],
+      "type": "raster"
+    },
+    "v": {
+      "attribution": "「5次メッシュ（250m）」（総務省統計局）及び「国勢調査 2015年 5次メッシュ（250mメッシュ）その１　人口等基本集計に関する事項」（総務省統計局）を国連ベクトルタイルツールキットで加工して作成",
+      "maxzoom": 11,
+      "tiles": [
+        "https://optgeo.github.io/g5/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "version": 8,
+  "zoom": 11
+}

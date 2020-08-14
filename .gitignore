@@ -2,4 +2,7 @@
 *.prj
 *.shp
 *.shx
+*.mbtiles
+*.csv
+*.txt
 
