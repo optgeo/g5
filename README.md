@@ -1,6 +1,9 @@
 # g5
 5次メッシュ（250mメッシュ）のベクトルタイル 
 
+# Smart Maps Bazaar 版デモサイト
+https://smb.optgeo.org/ipfs/QmRVi1KZvZwLhhP6xXAMG88LuPDYP1xqdBKorNBd8n4PLr
+
 # 出典
 出典：[政府統計の総合窓口（e-Stat）](https://www.e-stat.go.jp)  
 「5次メッシュ（250m）」（総務省統計局）及び「国勢調査 2015年 5次メッシュ（250mメッシュ）その１　人口等基本集計に関する事項」（総務省統計局）を加工して作成
